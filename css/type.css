@@ -1,0 +1,91 @@
+/* Typography styles for the Toast framework. They're pretty nice, but feel free to have a play around. */
+
+html, body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 100%; /* 16px */
+	line-height: 1.5; /* 24px */
+}
+
+/* set some spacing on all the likely content elements */
+
+p, ul, ol, blockquote, img, hr, form, table, canvas, video, object, embed, pre.prettyprint, code.prettyprint {
+	margin-bottom: 1.5em;
+}
+
+hr {
+	margin-top: -2px;
+	height: 0px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-top: 1px solid #aaa !important;
+	border-bottom: 1px solid #fff !important;
+	border-top-color: rgba(0,0,0,.2) !important;
+	border-bottom-color: rgba(255,255,255,.1) !important;
+}
+
+/* some sizes & vertical rhythm for headings, courtesy of Joshua Hibbert http://joshuanhibbert.com/ */
+
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+
+h1 {
+    font-size: 3em; /* 48 / 16 */
+    line-height: 1em; /* 48 / 48 */
+    margin-bottom: .5em; /* 24 / 48 */
+}
+
+h2 {
+    font-size: 2.25em; /* 36 / 16 */
+    line-height: 1.333333333333333em; /* 48 / 36 */
+    margin-bottom: .6666666666666667em; /* 24 / 36 */
+}
+
+h3 {
+    font-size: 1.5em; /* 24 / 16 */
+    line-height: 1em; /* 24 / 24 */
+    margin-bottom: 1em; /* 24 / 24 */
+}
+
+h4 {
+    font-size: 1.3125em; /* 21 / 16 */
+    line-height: 1.142857142857143em; /* 24 / 21 */
+    margin-bottom: 1.142857142857143em; /* 24 / 21 */
+}
+
+h5 {
+    font-size: 1.125em; /* 18 / 16 */
+    line-height: 1.333333333333333em; /* 24 / 18 */
+    margin-bottom: 1.333333333333333em; /* 24 / 18 */
+}
+
+h6 {
+    font-size: 1em; /* 16 / 16 */
+    line-height: 1.5em; /* 24 / 16 */
+    margin-bottom: 1.5em; /* 24 / 16 */
+}
+
+/* styling for special elements */
+
+em, i { font-style: oblique; }
+strong, b { font-weight: 700; }
+mark {
+	background: #ff9;
+	background: rgba(255,255,155,.6);
+	font-style: oblique;
+}
+small {
+	font-size: .8em;
+	line-height: 1.875em;
+}
+
+code, pre { font-family: monospace; font-size: 1.2em !important; }
+
+a:link, a:visited {
+	color: #369;
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #39c;
+}
