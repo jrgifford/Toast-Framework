@@ -30,10 +30,26 @@
 	max-width: 940px;
 }
 
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+.onecol, .twocol, .threecol,
+.fourcol, .fivecol, .sixcol,
+.sevencol, .eightcol, .ninecol,
+.tencol, .elevencol, .twelvecol {
+	display: inline;
 	margin-right: 3.8%;
 	float: left;
 	min-height: 1px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.pushone, .pullone, .pushtwo, .pulltwo,
+.pushthree, .pullthree, .pushfour, .pullfour,
+.pushfive, .pullfive, .pushsix, .pullsix,
+.pushseven, .pullseven, .pusheight, .pulleight,
+.pushnine, .pullnine, .pushten, .pullten,
+.pusheleven, .pulleleven, .pushtwelve, .pulltwelve {
+	position: relative;
 }
 
 /* I didn't calculate these widths, Andy Taylor of http://cssgrid.net/ did. You should thank him! */
@@ -51,23 +67,50 @@
 .elevencol { width: 91.35%; }
 .twelvecol { width: 100%; }
 
+.pushone { left: 4.85%; }
+.pushtwo { left: 13.45%; }
+.pushthree { left: 22.13%; }
+.pushfour { left: 30.75%; }
+.pushfive { left: 39.45%; }
+.pushsix { left: 48%; }
+.pushseven { left: 56.75%; }
+.pusheight { left: 65.4%; }
+.pushnine { left: 74.05%; }
+.pushten { left: 82.7%; }
+.pusheleven { left: 91.35%; }
+.pushtwelve { left: 100%; }
+
+.pullone { left: -4.85%; }
+.pulltwo { left: -13.45%; }
+.pullthree { left: -22.13%; }
+.pullfour { left: -30.75%; }
+.pullfive { left: -39.45%; }
+.pullsix { left: -48%; }
+.pullseven { left: -56.75%; }
+.pulleight { left: -65.4%; }
+.pullnine { left: -74.05%; }
+.pullten { left: -82.7%; }
+.pulleleven { left: -91.35%; }
+.pulltwelve { left: -100%; }
+
 /* People seem to avoid frameworks because of trouble with 'real' blocks - this will help! */
 /* why 1%? It's big, but not too big. 12px at full width. */
 
-.box { padding: .75em 0.951%; } /* the .75em on top & bottom retains the baseline grid */
+.box { padding: .75em; } /* the .75em on top & bottom retains the baseline grid */
+.box { padding: .75em .951%  !ie; } /* crummy IE */
 
-.onecol.box { width: 3%; }
-.twocol.box { width: 11.6%; }
-.threecol.box { width: 20.18%; }
-.fourcol.box { width: 28.9%; }
-.fivecol.box { width: 37.42%; }
-.sixcol.box { width: 46.15%; }
-.sevencol.box { width: 54.9%; }
-.eightcol.box { width: 63.35%; }
-.ninecol.box { width: 72.1%; }
-.tencol.box { width: 80.77%; }
-.elevencol.box { width: 89.3%; }
-.twelvecol.box { width: 99%; }
+.onecol.box { width: 3% !ie; }
+.twocol.box { width: 11.6% !ie; }
+.threecol.box { width: 20.18% !ie; }
+.fourcol.box { width: 28.9% !ie; }
+.fivecol.box { width: 37.42% !ie; }
+.sixcol.box { width: 46.15% !ie; }
+.sevencol.box { width: 54.9% !ie; }
+.eightcol.box { width: 63.35% !ie; }
+.ninecol.box { width: 72.1% !ie; }
+.tencol.box { width: 80.77% !ie; }
+.elevencol.box { width: 89.3% !ie; }
+.twelvecol.box { width: 99% !ie; }
 
 img, object, embed, video { max-width: 100%; }
 img { height: auto; }
@@ -90,7 +133,7 @@ img { height: auto; }
 
 @media screen and (max-width:960px) {
 	html, body {
-		font-size: 90%; /* tiny for for tiny screens */
+		font-size: 90%; /* tiny fonts for tiny screens */
 	}
 }
 
