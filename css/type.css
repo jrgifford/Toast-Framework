@@ -4,6 +4,10 @@ html, body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%; /* 16px */
 	line-height: 1.5; /* 24px */
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 }
 
 /* set some spacing on all the likely content elements */
@@ -88,4 +92,9 @@ a:link, a:visited {
 
 a:hover {
 	color: #39c;
+}
+
+abbr {
+	cursor: help;
+	border-bottom: 1px dashed #000;
 }
