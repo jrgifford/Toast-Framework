@@ -11,7 +11,7 @@
 
 /* import stylesheets and hide from IE/Mac (courtesy of Dan Cederholm - http://simplebits.com) \*/
 @import url("reset.css");
-@import url("ie.css");
+@import url("IE.css");
 @import url("type.css"); /* this is optional - it sets some default typography for your site, for beautiful vertical rhythm. Set at 16px (1em) with 24px line-height (1.5em) */
 /* end import/hide */
 
