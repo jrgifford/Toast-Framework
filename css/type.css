@@ -83,7 +83,7 @@ small {
 
 code, pre { font-family: monospace; font-size: 1.2em !important; }
 
-a:link, a:visited {
+a, a:visited {
 	color: #369;
 	outline: none;
 	text-decoration: none;
