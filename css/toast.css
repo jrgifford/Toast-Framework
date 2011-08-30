@@ -29,10 +29,7 @@
 	max-width: 940px;
 }
 
-.col_1, .col_2, .col_3,
-.col_4, .col_5, .col_6,
-.col_7, .col_8, .col_9,
-.col_10, .col_11, .col_12 {
+*[class^="col_"] {
 	display: inline;
 	margin-right: 3.8%;
 	float: left;
@@ -42,12 +39,7 @@
 	box-sizing: border-box;
 }
 
-.push_1, .pull_1, .push_2, .pull_2,
-.push_3, .pull_3, .push_4, .pull_4,
-.push_5, .pull_5, .push_6, .pull_6,
-.push_7, .pull_7, .push_8, .pull_8,
-.push_9, .pull_9, .push_10, .pull_10,
-.push_11, .pull_11, .push_12, .pull_12 {
+*[class^="push_", *[class^="pull_"] {
 	position: relative;
 }
 
@@ -176,10 +168,7 @@ img { height: auto; }
 		min-width: 0;
 	}
 	
-	.respond .col_1, .respond .col_2, .respond .col_3, 
-	.respond .col_4, .respond .col_5, .respond .col_6, 
-	.respond .col_7, .respond .col_8, .respond .col_9, 
-	.respond .col_10, .respond .col_11, .respond .col_12 {
+	.respond *[class^="col_"] {
 		width: 100%;
 		margin-right: 0;
 	}
