@@ -29,7 +29,7 @@
 	max-width: 940px;
 }
 
-*[class^="col_"] {
+*[class*="col_"] {
 	display: inline;
 	margin-right: 3.8%;
 	float: left;
@@ -39,7 +39,7 @@
 	box-sizing: border-box;
 }
 
-*[class^="push_", *[class^="pull_"] {
+*[class*="push_", *[class*="pull_"] {
 	position: relative;
 }
 
@@ -168,7 +168,7 @@ img { height: auto; }
 		min-width: 0;
 	}
 	
-	.respond *[class^="col_"] {
+	.respond *[class*="col_"] {
 		width: 100%;
 		margin-right: 0;
 	}
