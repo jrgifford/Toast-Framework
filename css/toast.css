@@ -142,7 +142,7 @@ img { height: auto; }
 	margin-left: 0;
 }
 
-.nest > :last-child { /* nested grids */	
+.nest > :first-child { /* nested grids */	
 	margin-left: 0;
 }
 
