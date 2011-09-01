@@ -39,7 +39,7 @@
 	box-sizing: border-box;
 }
 
-*[class*="push_", *[class*="pull_"] {
+*[class*="push_"], *[class*="pull_"] {
 	position: relative;
 }
 
