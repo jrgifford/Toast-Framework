@@ -31,7 +31,7 @@
 
 *[class*="col_"] {
 	display: inline;
-	margin-right: 3.8%;
+	margin-left: 3.8%;
 	float: left;
 	min-height: 1px;
 	-webkit-box-sizing: border-box;
@@ -138,12 +138,12 @@ img { height: auto; }
 
 /* Here's where it gets good. Remember .last? That's gone. Remember the clearfix? NOT UP IN HERE! */
 
-.row > :last-child {
-	margin-right: 0;
+.row > :first-child {
+	margin-left: 0;
 }
 
 .nest > :last-child { /* nested grids */	
-	margin-right: 0;
+	margin-left: 0;
 }
 
 .row:after {
