@@ -146,12 +146,24 @@ img { height: auto; }
 	margin-left: 0;
 }
 
-.row:after {
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
+/* new clearfix from Nicolas Gallagher - http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+
+.row:after,
+.group:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.row, .group {
+    zoom:1;
 }
 
 /* media queries for mobile, tablet, and small screen friendly websites */
