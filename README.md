@@ -8,16 +8,16 @@ Page structure
 
 The structure for Toast is fairly easy to grasp - lets make a typical page with 2 columns:
 
-<div class="row">
-	<div class="col_9">
+&lt;div class="row">
+	&lt;div class="col_9">
 		Content!
-	</div>
-	<div class="col_3 box">
+	&lt;/div>
+	&lt;div class="col_3 box">
 		Sidebar!
-	</div>
-</div>
+	&lt;/div>
+&lt;/div>
 
-Now we have 2 columns, one spanning nine column values, and one spanning three. In case you didn't notice, there's a class of "box" in that sidebar too. That class adds padding to the <div>, creating a 'real' box that you can apply a background too. Neat huh? And it doesn't break the grid!
+Now we have 2 columns, one spanning nine column values, and one spanning three. In case you didn't notice, there's a class of "box" in that sidebar too. That class adds padding to the div, creating a 'real' box that you can apply a background too. Neat huh? And it doesn't break the grid!
 
 Other cool things
 -----------------

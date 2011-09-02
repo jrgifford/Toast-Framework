@@ -1,9 +1,0 @@
-/* IE7 and below hate toast. Let's try and fix that, shall we? */
-
-* html .row { /* IE6 */
-	height: 1%;
-}
-
-*:first-child+html .row { /* IE7 */
-	min-height: 1px;
-}
