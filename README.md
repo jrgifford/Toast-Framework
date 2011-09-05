@@ -28,3 +28,4 @@ There are a couple of other classes that will do cool stuff to the page:
  - *respond* - adding this to the container will make it responsive, so it scales down to mobile sizes
  - *push_x* and *pull_x* - add this to a column, and it will push or pull it right & left by x columns
  - *prefix_x* and *suffix_x* will create space on the left or right of the column
+ - *nest* - if you want nested grids (like a col_9 with two columns inside that) just add the class "nest" to the parent.
