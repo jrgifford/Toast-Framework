@@ -184,7 +184,7 @@ img { height: auto; }
 	}
 	
 	.respond *[class*="col_"] {
-		width: 100%;
+		width: 96.875%;
 		margin-right: 0;
 	}
 }
